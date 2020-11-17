@@ -1,0 +1,11 @@
+[package]
+name = "bug"
+version = "0.1.0"
+authors = ["Ivan Enderlin <ivan@mnt.io>"]
+edition = "2018"
+
+[dependencies]
+wasmer = { git = "https://github.com/Hywan/wasmer", branch = "fix-vm-leak" }
+
+#[patch.crates-io]
+#rayon-core = { git = "https://github.com/Hywan/rayon", branch = "fix-registry-leak" }
